@@ -16,7 +16,7 @@ Our `Pipeline`
 Knowing that non-linear growth is commmon in real world data, we wanted to visualize the relationship between 1) `n_steps` and `minutes` and 2) `n_ingredients` and `minutes` respectively since we wanted to train a linear regression model on `n_steps` and `n_ingredients` to predict `minutes`.
 <div><span><iframe src="assets/scatter-nsteps-minutes.html" width=400 height=300 frameBorder=0></iframe></span><span>
 <iframe src="assets/scatter-ningredients-minutes.html" width=400 height=300 frameBorder=0></iframe></span></div>
-<div><span></span><iframe src="assets/residual-nsteps-minutes.html" width=400 height=300 frameBorder=0></iframe></span><span>
+<div><span><iframe src="assets/residual-nsteps-minutes.html" width=400 height=300 frameBorder=0></iframe></span><span>
 <iframe src="assets/residual-ningredients-minutes.html" width=400 height=300 frameBorder=0></iframe></span></div>
 As evident by the scatter and regression plots above, both `n_steps` and `minutes` and `n_ingredients` and `minutes` don't have linear relationships, meaning that these columns need to be transformed before any `Pipeline` can be created.
 
