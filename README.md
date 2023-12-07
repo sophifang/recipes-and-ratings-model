@@ -10,12 +10,16 @@ For our baseline model, we trained a regression model using two numerical featur
 
 Our `Pipeline`
 1. log-scales `n_steps` and `n_ingredients`, then
-2. predicts `log minutes` (the natural logarithm of `minutes`) using a linear regression model (using the transformed `n_steps` and `n_ingredients`.
+2. predicts `log minutes` (the natural logarithm of `minutes`) using a linear regression model (using the transformed `n_steps` and `n_ingredients`).
 
 ### Model Explanation: Scaling Transformations
 Knowing that non-linear growth is commmon in real world data, we wanted to visualize the relationship between 1) `n_steps` and `minutes` and 2) `n_ingredients` and `minutes` respectively since we wanted to train a linear regression model on `n_steps` and `n_ingredients` to predict `minutes`.
 <iframe src="assets/scatter-nsteps-minutes.html" width=800 height=600 frameBorder=0></iframe>
 <iframe src="assets/scatter-ningredients-minutes.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/regression-nsteps-minutes.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/regression-ningredients-minutes.html" width=800 height=600 frameBorder=0></iframe>
+As evident by the scatter and regression plots above, both `n_steps` and `minutes` and `n_ingredients` and `minutes` don't have linear relationships, meaning that these columns need to be transformed before any `Pipeline` can be created.
+
 In order to be able to use a linear regression model on `n_steps` and `n_
 ingredients` to predict `minutes`, we needed to transform their complicated, non-linear relationship into a linear relationship because linear relationships are easy for models like linear regression to use.
 
