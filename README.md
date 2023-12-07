@@ -22,9 +22,9 @@ As evident by the scatter and regression plots above, both `n_steps` and `minute
 ingredients` to predict `minutes`, we needed to transform their complicated, non-linear relationship into a linear relationship because linear relationships are easy for models like linear regression to use.
 
 If we take a look at the individual columns themselves, we can see that the data for all three columns is skewed. Based on this knowledge, we can conduct log transformations in order to spread out clumps of data and bring together spread-out data.
-<div><span><iframe src="assets/hist-nsteps.html" width=266.67 height=200 frameBorder=0></iframe></span><span>
-<iframe src="assets/hist-ningredients.html" width=266.67 height=200 frameBorder=0></iframe></span><span>
-<iframe src="assets/hist-minutes.html" width=266.67 height=200 frameBorder=0></iframe></span></div>
+<div><span><iframe src="assets/hist-nsteps.html" width=266 height=200 frameBorder=0></iframe></span><span>
+<iframe src="assets/hist-ningredients.html" width=266 height=200 frameBorder=0></iframe></span><span>
+<iframe src="assets/hist-minutes.html" width=266 height=200 frameBorder=0></iframe></span></div>
 
 ### Model Performance
 Our baseline model has a $R^2$ score of 0.2265, meaning that 22.65% of the variance of `log minutes` is explained by the variables of log-scaled `n_steps` and `n_ingredients`. Additionally, our RMSE value is 0.9713, which represents the average distance between the observed `log minutes` values and the predicted `log minutes` values. This RMSE value will be helpful when creating our final model, as it is particularly useful for comparing the fit of different regression models (the lower the RMSE, the better the model fits the dataset).
