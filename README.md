@@ -12,7 +12,9 @@ Our `Pipeline`
 1. log-scales `n_steps` and `n_ingredients`, then
 2. predicts `log minutes` (the natural logarithm of `minutes`) using a linear regression model (using the transformed `n_steps` and `n_ingredients`.
 
-### Model Explanation: Why take the natural logarithmn of `n_steps`, `n_ingredients`, and `minutes`?
+### Model Explanation: Scaling Transformations
+In order to be able to use a linear regression model on `n_steps` and `n_
+ingredients` to predict `minutes`, we needed to transform their complicated, non-linear relationship into a linear relationship because linear relationships are easy for models like linear regression to use.
 
 ### Model Performance
 Our baseline model has a R^2 score of 0.2265, meaning that 22.65% of the variance of `log minutes` is explained by the variables of log-scaled `n_steps` and `n_ingredients`. Additionally, our RMSE value is 0.9713, which represents the average distance between the observed `log minutes` values and the predicted `log minutes` values. This RMSE value will be helpful when creating our final model, as it is particularly useful for comparing the fit of different regression models (the lower the RMSE, the better the model fits the dataset).
