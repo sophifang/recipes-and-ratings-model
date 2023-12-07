@@ -7,7 +7,7 @@ For our baseline model, we trained a regression model using two numerical featur
 
 Our `Pipeline`
 1. log-scales `n_steps` and `n_ingredients`, then
-2. predicts `minutes` using a linear regression model (using the transformed `n_steps` and `n_ingredients`.
+2. predicts the natural logarithm of `minutes` using a linear regression model (using the transformed `n_steps` and `n_ingredients`.
 
 
 ## Baseline Model
