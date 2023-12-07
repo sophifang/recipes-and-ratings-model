@@ -25,6 +25,9 @@ If we take a look at the individual columns themselves, we can see that the data
 <div><span><iframe src="assets/hist-nsteps.html" width=266 height=300 frameBorder=0></iframe></span><span>
 <iframe src="assets/hist-ningredients.html" width=266 height=300 frameBorder=0></iframe></span><span>
 <iframe src="assets/hist-minutes.html" width=266 height=300 frameBorder=0></iframe></span></div>
+<div><span><iframe src="assets/hist-log-nsteps.html" width=266 height=300 frameBorder=0></iframe></span><span>
+<iframe src="assets/hist-log-ningredients.html" width=266 height=300 frameBorder=0></iframe></span><span>
+<iframe src="assets/hist-log-minutes.html" width=266 height=300 frameBorder=0></iframe></span></div>
 
 ### Model Performance
 Our baseline model has a $R^2$ score of 0.2265, meaning that 22.65% of the variance of `log minutes` is explained by the variables of log-scaled `n_steps` and `n_ingredients`. Additionally, our RMSE value is 0.9713, which represents the average distance between the observed `log minutes` values and the predicted `log minutes` values. This RMSE value will be helpful when creating our final model, as it is particularly useful for comparing the fit of different regression models (the lower the RMSE, the better the model fits the dataset).
