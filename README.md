@@ -1,7 +1,7 @@
 # Food.com Total Time to Make Recipe Prediction Model
 
 ## Framing the Problem
-For our baseline model, we trained a regression model using two log-scaled numerical features:
+For our baseline model, we trained a regression model using two numerical features:
 - `n_steps`: a quantitative, numeric attribute
 - `n_ingredients`: a quantitative, numeric attribute
 
