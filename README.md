@@ -8,9 +8,10 @@ For our baseline model, we trained a regression model using two numerical featur
 
 Our `Pipeline`
 1. log-scales `n_steps` and `n_ingredients`, then
-2. predicts the natural logarithm of `minutes` using a linear regression model (using the transformed `n_steps` and `n_ingredients`.
+2. predicts `log minutes` (the natural logarithm of `minutes`) using a linear regression model (using the transformed `n_steps` and `n_ingredients`.
 
 ### Model Performance
+Our baseline model has a R^2 score of 0.2265, meaning that 22.65% of the variance of `log minutes` is explained by the varaince of log-scaled `n_steps` and `n_ingredients`.
 
 ## Baseline Model
 
