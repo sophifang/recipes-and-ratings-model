@@ -133,10 +133,10 @@ For our fairness analysis, we want to investigate whether our final model perfor
 **Evaluation metric**: Since we used RMSE as one of our evaluation metrics for our final model, we will be using RMSE as our evaluation metric for our fairness analysis as well.\
 **Null Hypothesis**: Our model is fair. The RMSE for bad ratings and good ratings are roughly the same, and any differences are due to random chance.\
 **Alternative Hypothesis**: Our model is unfair. The RMSE for bad ratings is lower than its RMSE for good ratings.\
-**Test statistic**: We will use an absolute difference of means as out test statistic.\
-**Significance level**: Our significance level will be 5%.\
+**Test statistic**: We will use an absolute difference of means as our test statistic.\
+**Significance level**: Our significance level is 5%.\
 **p-value**: After 500 permutations, we got a p-value of 0.012.
 
 <iframe src="assets/fairness_analysis.html" width=800 height=600 frameBorder=0></iframe>
 
-**Conclusion**: By observing the distribution and examining how our p-value of 0.012 is smaller than the significance level chosen for our test statistic of 0.05, our test suggests that we reject the null.
+**Conclusion**: By observing the distribution and examining how our p-value of 0.012 is smaller than the significance level chosen for our test statistic of 0.05, thus we reject the null hypothesis. This suggests our model is not fair as it appears statistically biased towards the bad ratings of where recipes with ratings had less than or equal to 3.
