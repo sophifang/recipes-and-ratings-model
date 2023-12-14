@@ -128,7 +128,7 @@ Based on these metrics, our final model is an improvement from our baseline mode
 ## Fairness Analysis
 For our fairness analysis, we want to investigate whether our final model performs better for recipes with good ratings or bad ratings. To answer this question, we first determined whether each value in the `rating` column is "good" or "bad" by assigning all ratings strictly greater than 3 as "good" and the rest of the values as "bad". We then ran a permutation test where we shuffled the ratings of group X, the bad ratings, and group Y, the good ratings. A summary of our hypothesis is shown in the following descriptions.\
 \
-**Group X**: Bad Ratings (Recipes with ratings <= 3)\
+**Group X**: Bad Ratings (Recipes with ratings ≤ 3)\
 **Group Y**: Good Ratings (Recipes with ratings > 3)\
 **Evaluation metric**: Since we used RMSE as one of our evaluation metrics for our final model, we will be using RMSE as our evaluation metric for our fairness analysis as well.\
 **Null Hypothesis**: Our model is fair. The RMSE for bad ratings and good ratings are roughly the same, and any differences are due to random chance.\
