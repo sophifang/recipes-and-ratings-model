@@ -22,7 +22,7 @@ As evident by the scatter and regression plots above, both `n_steps` and `minute
 ingredients` to predict `minutes`, we needed to transform their complicated, non-linear relationship into a linear relationship because linear relationships are easy for models like linear regression to use.
 
 If we take a look at the individual columns themselves, we can see that the data for all three columns is skewed. Based on this knowledge, we can conduct log transformations in order to spread out clumps of data and bring together spread-out data.
-<div style="width:100%"><span><iframe src="assets/hist-nsteps.html" width=266 height=300 frameBorder=0></iframe></span><span>
+<div><span><iframe src="assets/hist-nsteps.html" width=266 height=300 frameBorder=0></iframe></span><span>
 <iframe src="assets/hist-ningredients.html" width=266 height=300 frameBorder=0></iframe></span><span>
 <iframe src="assets/hist-minutes.html" width=266 height=300 frameBorder=0></iframe></span></div>
 <div><span><iframe src="assets/hist-log-nsteps.html" width=266 height=300 frameBorder=0></iframe></span><span>
@@ -44,4 +44,7 @@ For the baseline model, we used the defauly hyperparameters for linear regressio
 - `copy_X`: True
 - `n_jobs`: None
 - `positive`: False
+
+
+
 ## Fairness Analysis
