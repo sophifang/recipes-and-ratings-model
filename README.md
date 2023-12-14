@@ -5,6 +5,10 @@
 ## Framing the Problem
 The amount of time it takes to finish an activity or for an event to happen can vary among the respective categories because there are different internal and external factors that affect their duration of time. For this project, we build a regression model and our prediction problem is to see how different recipes are prepared and whether factors such as the amount of ingredients each recipe requires or the difficulty rating of each recipe is, would have an affect on how long the recipes take to prepare.
 
+**Prediction Problem**: Predicting the number of minutes it takes to complete a recipe given a combination of features
+
+**Prediction Type**: Regression (Linear regression)
+
 **Response Variable**: The response variable is minutes, which is quantitative data. We chose minutes as it is used to determine what the preparation time is per recipe. In the real world, the duration of time it takes to cook a meal is important to each person because there are people who can only afford to spend short periods of their day preparing meals versus others who have more time and they do not mind spending longer when it comes to cooking.
 
 **Evaluation Metric**: Because we are implementing a regression model, we would evaluate metrics such as Mean Squared Error (MSE), Mean Absolute Error (MAE), R<sup>2</sup>, or Root Mean Squared Error (RMSE). We chose R<sup>2</sup> and Root Mean Squared Error (RMSE) as the most suitable metrics because R<sup>2</sup> measures the quality of a linear fit and RMSE measures the quality of a regression model's predictions. The higher R<sup>2</sup> is, it shows it does a better job at modeling data. The smaller RMSE is, it shows it does a better job at modeling data. It is also possible for the RMSE to increase on unseen data when features are added to the model. Taking this into consideration, we prioritized improving the R<sup>2</sup> metric based on its value increasing and the RMSE metric based on its value decreasing, while keeping track of the features we add to our model.
