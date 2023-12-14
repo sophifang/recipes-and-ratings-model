@@ -40,6 +40,9 @@ As evident by the scatter and regression plots above, both `n_steps` and `minute
 ingredients` to predict `minutes`, we needed to transform their complicated, non-linear relationship into a linear relationship because linear relationships are easy for models like linear regression to use.
 
 If we take a look at the individual columns themselves, we can see that the data for all three columns is skewed. Based on this knowledge, we can conduct log transformations in order to spread out clumps of data and bring together spread-out data.
+
+Note: Right column graph titles from top to bottom: Distribution of Natural Logarithm of Number of Steps, Distribution of Natural Logarithm of Number of Ingredients, Distribution of Natural Logarithm of Minutes
+
 <div><span><iframe src="assets/hist-nsteps.html" width=400 height=300 frameBorder=0></iframe></span><span><iframe src="assets/hist-log-nsteps.html" width=400 height=300 frameBorder=0></iframe></span></div>
 <div>
 <span>
