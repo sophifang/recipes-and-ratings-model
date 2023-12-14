@@ -19,7 +19,7 @@ For our prior analysis, which can be found [here](https://sophifang.github.io/re
 
 ## Baseline Model
 ### Model Description
-For our baseline model, we trained a regression model using two numerical features:
+For our baseline model, we trained a linear regression model using two numerical features:
 - `n_steps`: a quantitative, numeric attribute
 - `n_ingredients`: a quantitative, numeric attribute
 
