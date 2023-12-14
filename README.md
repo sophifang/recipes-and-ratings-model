@@ -29,6 +29,9 @@ Our `Pipeline`
 
 ### Model Explanation: Scaling Transformations
 Knowing that non-linear growth is commmon in real world data, we wanted to visualize the relationship between 1) `n_steps` and `minutes` and 2) `n_ingredients` and `minutes` respectively since we wanted to train a linear regression model on `n_steps` and `n_ingredients` to predict `minutes`.
+
+Note: Graph titles from left to right, first row: Relationship between Number of Steps in a Recipe and the Minutes to Complete Recipe, Number of Ingredients in a Recipe and the Minutes to Complete Recipe; second row: Minutes Residuals vs Number of Steps in a Recipe, Minutes Residuals vs Number of Ingredients in a Recipe.
+
 <div><span><iframe src="assets/scatter-nsteps-minutes.html" width=400 height=300 frameBorder=0></iframe></span><span>
 <iframe src="assets/scatter-ningredients-minutes.html" width=400 height=300 frameBorder=0></iframe></span></div>
 <div><span><iframe src="assets/residual-nsteps-minutes.html" width=400 height=300 frameBorder=0></iframe></span><span>
