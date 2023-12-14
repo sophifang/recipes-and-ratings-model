@@ -139,4 +139,4 @@ For our fairness analysis, we want to investigate whether our final model perfor
 
 <iframe src="assets/fairness_analysis.html" width=800 height=600 frameBorder=0></iframe>
 
-**Conclusion**: By observing the distribution and examining how our p-value of 0.012 is smaller than our significance level of 0.05, we reject the null hypothesis. This ***suggests*** our model is not fair as it appears statistically biased towards the bad ratings of where recipes with ratings had less than or equal to 3.
+**Conclusion**: By observing the distribution and examining how our p-value of 0.012 is smaller than our significance level of 0.05, we reject the null hypothesis. This ***suggests*** our model is not fair as it appears statistically biased towards the bad ratings, which are the recipes with ratings that were less than or equal to 3.
