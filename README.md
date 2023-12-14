@@ -43,9 +43,12 @@ If we take a look at the individual columns themselves, we can see that the data
 <iframe src="assets/hist-minutes.html" width=400 height=300 frameBorder=0></iframe></span><span>
 <iframe src="assets/hist-log-minutes.html" width=400 height=300 frameBorder=0></iframe></span></div>
 
-Now that we have log-transformed our variables, we have successfully had non-linear relationships _more_ linear. While there is still evidence of heteroscedasticity in the residual plot, the residuals are more uniformly scattered and has no pattern compared to previously.\
-\
-[insert scatter plots (2) and residual plots (2)]
+Now that we have log-transformed our variables, we have successfully had non-linear relationships _more_ linear. While there is still evidence of heteroscedasticity in the residual plot, the residuals are more uniformly scattered and has no pattern compared to previously.
+
+<div><span><iframe src="assets/log-nsteps-log-minutes.html" width=400 height=300 frameBorder=0></iframe></span><span>
+<iframe src="assets/residual-log-nsteps-log-minutes.html" width=400 height=300 frameBorder=0></iframe></span></div>
+<div><span><iframe src="assets/log-ningredients-log-minutes.html" width=400 height=300 frameBorder=0></iframe></span><span>
+<iframe src="assets/residual-log-ningredients-log-minutes.html" width=400 height=300 frameBorder=0></iframe></span></div>
 
 ### Model Performance
 Our baseline model has a R<sup>2</sup> score of 0.2265, meaning that 22.65% of the variance of `log minutes` is explained by the variables of log-scaled `n_steps` and `n_ingredients`. Additionally, our RMSE value is 0.9713, which represents the average distance between the observed `log minutes` values and the predicted `log minutes` values. This RMSE value will be helpful when creating our final model, as it is particularly useful for comparing the fit of different regression models (the lower the RMSE, the better the model fits the dataset).
