@@ -86,4 +86,18 @@ The mean RMSE for each combination of features is as follows:
 
 , which revelas that our best-performing combination of features is `n_steps`, `n_ingredients`, `difficulty`, and `name`. This is the combination of features that we will be using to fit our final model.
 
+### Model Description
+Based on our hyperparameter testing, our final linear regression model is fit based on four features:
+- `n_steps`: a quantitative, numeric attribute
+- `n_ingredients`: a quantitative, numeric attribute
+- `difficulty`: a categorical attribute (`easy`, `hard`, `neutral`)
+- `name`: a text-based attribute
+
+Our `Pipeline`
+1. log-scales `n_steps` and `n_ingredients`,
+2. One Hot Encodes `difficulty`,
+3. Uses `CountVectorizer` on `name`, then
+4. predicts `log minutes` (the natural logarithm of `minutes`) using a linear regression model.
+
+
 ## Fairness Analysis
