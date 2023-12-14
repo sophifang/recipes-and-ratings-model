@@ -95,7 +95,7 @@ Our 5-fold cross-validation on the following combination of features—n_steps, 
 
 The mean RMSE for each combination of features is as follows:
 
-|                                                           |   Mean RMSE |
+| Features                                                  |   Mean RMSE |
 |:----------------------------------------------------------|------------:|
 | n_steps only                                              |    1.0076   |
 | n_steps + n_ingredients                                   |    0.987371 |
