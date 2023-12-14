@@ -63,7 +63,7 @@ Note: Graph titles from left to right, first row: Relationship between Log of Nu
 <iframe src="assets/residual-log-ningredients-log-minutes.html" width=400 height=300 frameBorder=0></iframe></span></div>
 
 ### Model Performance
-Our baseline model has a R<sup>2</sup> score of 0.2265, meaning that 22.65% of the variance of `log minutes` is explained by the variables of log-scaled `n_steps` and `n_ingredients`. Additionally, our RMSE value is 0.9713, which represents the average distance between the observed `log minutes` values and the predicted `log minutes` values. This RMSE value will be helpful when creating our final model, as it is particularly useful for comparing the fit of different regression models (the lower the RMSE, the better the model fits the dataset).
+On unseen data, our baseline model has a R<sup>2</sup> score of 0.2265, meaning that 22.65% of the variance of `log minutes` is explained by the variables of log-scaled `n_steps` and `n_ingredients`. Additionally, our RMSE value is 0.9713 on unseen data, which represents the average distance between the observed `log minutes` values and the predicted `log minutes` values. This RMSE value will be helpful when creating our final model, as it is particularly useful for comparing the fit of different regression models (the lower the RMSE, the better the model fits the dataset).
 
 Based on these metrics, our baseline model is not good since only 22.65% of the variance of our response variable `log minutes` is explained by the predictor variables `n_steps` and `n_ingredients`. Our goal for the our final model was to imrprove our regression model so that more of the variance of `log minutes` is explained (higher R<sup>2</sup>) and to generate a lower RMSE to indicate a better model fit.
 
