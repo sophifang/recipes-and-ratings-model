@@ -38,5 +38,10 @@ Our baseline model has a $R^2$ score of 0.2265, meaning that 22.65% of the varia
 Based on these metrics, our baseline model is not good since only 22.65% of the variance of our response variable `log minutes` is explained by the predictor variables `n_steps` and `n_ingredients`. Our goal for the our final model was to imrprove our regression model so that more of the variance of `log minutes` is explained (higher $R^2$) and to generate a lower RMSE to indicate a better model fit.
 
 ## Final Model
-
+### Hyperparameters
+For the baseline model, we used the defauly hyperparameters for linear regression, which are as follows:
+- fit_intercept: bool, default=True
+- copy_X: bool, default=True
+- n_jobs: int, default=None
+- positive: bool, default=False
 ## Fairness Analysis
