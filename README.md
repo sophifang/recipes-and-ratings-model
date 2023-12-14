@@ -48,7 +48,12 @@ For the baseline model, we used the default hyperparameters for linear regressio
 
 For our final model, we wanted to see if changing the values of any of these hyperparameters will optimize our model further. However, there are a couple of hyperparameters that won't be relevant to test for this model:
 - `copy_X = True` makes sure that a copy of `X` is passed in. Setting `copy_X = False` would mean that `X` could possibly be overwritten during `fit`, so we will **not** be testing this hyperparameter.
-- `n_jobs`: None
-- `positive`: False
+- `n_jobs` specifies the number of jobs for the computation (CPU usage), something that we will **not** be testing for this model. And lastly,
+- `positive = True` is only supported for dense arrays, which is not applicable to our data. Therefore, we will be sticking to the default `positive = False`.
+
+This means that the only relevant hyperparameter for us to test was `fit-intercept ` (whether or not to calculate the intercept for the linear regression model), which we did using `GridSearchCV`.
+
+### K-fold Cross-Validation
+Given that 
 
 ## Fairness Analysis
