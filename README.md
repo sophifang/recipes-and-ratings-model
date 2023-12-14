@@ -46,6 +46,9 @@ For the baseline model, we used the default hyperparameters for linear regressio
 - `n_jobs`: None
 - `positive`: False
 
-
+For our final model, we wanted to see if changing the values of any of these hyperparameters will optimize our model further. However, there are a couple of hyperparameters that won't be relevant to test for this model:
+- `copy_X = True` makes sure that a copy of `X` is passed in. Setting `copy_X = False` would mean that `X` could possibly be overwritten during `fit`.
+- `n_jobs`: None
+- `positive`: False
 
 ## Fairness Analysis
