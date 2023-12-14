@@ -33,15 +33,15 @@ As evident by the scatter and regression plots above, both `n_steps` and `minute
 ingredients` to predict `minutes`, we needed to transform their complicated, non-linear relationship into a linear relationship because linear relationships are easy for models like linear regression to use.
 
 If we take a look at the individual columns themselves, we can see that the data for all three columns is skewed. Based on this knowledge, we can conduct log transformations in order to spread out clumps of data and bring together spread-out data.
-<div><span><iframe src="assets/hist-nsteps.html" width=400 height=300 frameBorder=0></iframe></span><span><iframe src="assets/hist-log-nsteps.html" width=500 height=300 frameBorder=0></iframe></span></div>
+<div><span><iframe src="assets/hist-nsteps.html" width=400 height=300 frameBorder=0></iframe></span><span><iframe src="assets/hist-log-nsteps.html" width=400 height=300 frameBorder=0></iframe></span></div>
 <div>
 <span>
 <iframe src="assets/hist-ningredients.html" width=400 height=300 frameBorder=0></iframe></span><span>
-<iframe src="assets/hist-log-ningredients.html" width=500 height=300 frameBorder=0></iframe></span></div>
+<iframe src="assets/hist-log-ningredients.html" width=400 height=300 frameBorder=0></iframe></span></div>
 <div>
 <span>
 <iframe src="assets/hist-minutes.html" width=400 height=300 frameBorder=0></iframe></span><span>
-<iframe src="assets/hist-log-minutes.html" width=500 height=300 frameBorder=0></iframe></span></div>
+<iframe src="assets/hist-log-minutes.html" width=400 height=300 frameBorder=0></iframe></span></div>
 
 Now that we have log-transformed our variables, we have successfully had non-linear relationships _more_ linear. While there is still evidence of heteroscedasticity in the residual plot, the residuals are more uniformly scattered and has no pattern compared to previously.\
 \
