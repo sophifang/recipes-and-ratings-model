@@ -51,7 +51,11 @@ For our final model, we wanted to see if changing the values of any of these hyp
 - `n_jobs` specifies the number of jobs for the computation (CPU usage), something that we will **not** be testing for this model. And lastly,
 - `positive = True` is only supported for dense arrays, which is not applicable to our data. Therefore, we will be sticking to the default `positive = False`.
 
-This means that the only relevant hyperparameter for us to test was `fit-intercept ` (whether or not to calculate the intercept for the linear regression model), which we did using `GridSearchCV`.
+This means that the only relevant hyperparameter for us to test was `fit-intercept` (whether or not to calculate the intercept for the linear regression model), which we did using `GridSearchCV`. Below is a `DataFrame` displaying the mean validation accuaries of different combinations of hyperparameter settings.
+
+[insert dataframe]
+
+The result of `GridSearchCV` is that the best hyperparameters for our model would be `{'fit_intercept': True}`, the default setting. Therefore, based on our results, we will be using all the default hyperparameter settings for the final model.
 
 ### K-fold Cross-Validation
 Given that 
