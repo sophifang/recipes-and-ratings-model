@@ -104,7 +104,7 @@ In addition to the two features from our baseline model (log-scaled `n_steps` an
 - `description`: contains the recipe description
     - We believed that this feature would improve our model’s performance from the perspective of the data generating process because this field is a space for the recipe author to market their recipe freely. For example, if the recipe author highlights that this recipe is “dorm-friendly”, we can infer that it will take less time due to the limited or lack of kitchen space college students have. On the other hand, if we see “this is my family’s favorite Thanksgiving recipe”, the recipe duration would probably be longer because the words highlight that the recipe serves multiple people and is made for a special holiday.
  
-Our 5-fold cross-validation on the following combination of features—n_steps, n_ingredients, review, name, and description—yields the DataFrame below that displays the RMSE for each validation fold and combination of features.
+Our 5-fold cross-validation on the following combination of features—`n_steps`, `n_ingredients`, `review`, `name`, and `description`—yields the DataFrame below that displays the RMSE for each validation fold and combination of features.
 
 | Validation Fold   |   n_steps only |   n_steps + n_ingredients |   n_steps + n_ingredients + difficulty |   n_steps + n_ingredients + difficulty + name |   n_steps + n_ingredients + difficulty + name + description |
 |:------------------|---------------:|--------------------------:|---------------------------------------:|----------------------------------------------:|------------------------------------------------------------:|
