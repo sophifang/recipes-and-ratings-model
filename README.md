@@ -136,4 +136,7 @@ For our fairness analysis, we want to investigate whether our final model perfor
 **Test statistic**: We will use an absolute difference of means as out test statistic.\
 **Significance level**: Our significance level will be 5%.\
 **p-value**: After 500 permutations, we got a p-value of 0.012.\
+
+<iframe src="assets/fairness_analysis.html" width=800 height=600 frameBorder=0></iframe>
+
 **Conclusion**: By observing the distribution and examining how our p-value of 0.012 is smaller than the significance level chosen for our test statistic of 0.05, our test suggests that we reject the null.
