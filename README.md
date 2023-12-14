@@ -124,3 +124,14 @@ Our final model has a R<sup>2</sup> score of 0.6080, meaning that 60.80% of the 
 Based on these metrics, our final model is an improvement from our baseline model, with RMSE decreasing from 0.97 to 0.70 and R<sup>2</sup> increasing from 22% to 60%.
 
 ## Fairness Analysis
+For our fairness analysis, we want to investigate whether our final model performs better for recipes with good ratings or bad ratings. To answer this question, we first determined whether each value in the `rating` column is "good" or "bad" by assigning all ratings strictly greater than 3 as "good" and the rest of the values as "bad". We then ran a permutation test where we shuffled the ratings of group X, the bad ratings, and group Y, the good ratings. A summary of our hypothesis is shown in the following descriptions.
+
+**Group X**: Bad Ratings (Recipes with ratings $\leq 3$)
+**Group Y**: Good Ratings (Recipes with ratings $>3$)
+**Evaluation metric**: Since we used RMSE as one of our evaluation metrics for our final model, we will be using RMSE as our evaluation metric for our fairness analysis as well.
+**Null Hypothesis**: Our model is fair. The RMSE for bad ratings and good ratings are roughly the same, and any differences are due to random chance.
+**Alternative Hypothesis**: Our model is unfair. The RMSE for bad ratings is lower than its RMSE for good ratings.
+**Test statistic**: We will use an absolute difference of means as out test statistic.
+**Significance level**: Our significance level will be 5%.
+**p-value**: After 500 permutations, we got a p-value of 0.012.
+**Conclusion**: By observing the distribution and examining how our p-value of 0.012 is smaller than the significance level chosen for our test statistic of 0.05, our test suggests that we reject the null.
