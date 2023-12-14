@@ -42,9 +42,9 @@ Now that we have log-transformed our variables, we have successfully had non-lin
 [insert scatter plots (2) and residual plots (2)]
 
 ### Model Performance
-Our baseline model has a $R^2$ score of 0.2265, meaning that 22.65% of the variance of `log minutes` is explained by the variables of log-scaled `n_steps` and `n_ingredients`. Additionally, our RMSE value is 0.9713, which represents the average distance between the observed `log minutes` values and the predicted `log minutes` values. This RMSE value will be helpful when creating our final model, as it is particularly useful for comparing the fit of different regression models (the lower the RMSE, the better the model fits the dataset).
+Our baseline model has a R^2^ score of 0.2265, meaning that 22.65% of the variance of `log minutes` is explained by the variables of log-scaled `n_steps` and `n_ingredients`. Additionally, our RMSE value is 0.9713, which represents the average distance between the observed `log minutes` values and the predicted `log minutes` values. This RMSE value will be helpful when creating our final model, as it is particularly useful for comparing the fit of different regression models (the lower the RMSE, the better the model fits the dataset).
 
-Based on these metrics, our baseline model is not good since only 22.65% of the variance of our response variable `log minutes` is explained by the predictor variables `n_steps` and `n_ingredients`. Our goal for the our final model was to imrprove our regression model so that more of the variance of `log minutes` is explained (higher $R^2$) and to generate a lower RMSE to indicate a better model fit.
+Based on these metrics, our baseline model is not good since only 22.65% of the variance of our response variable `log minutes` is explained by the predictor variables `n_steps` and `n_ingredients`. Our goal for the our final model was to imrprove our regression model so that more of the variance of `log minutes` is explained (higher R^2^) and to generate a lower RMSE to indicate a better model fit.
 
 ## Final Model
 
@@ -119,8 +119,8 @@ Our `Pipeline`
 4. predicts `log minutes` (the natural logarithm of `minutes`) using a linear regression model.
 
 ### Model Performance
-Our final model has a $R^2$ score of 0.6080, meaning that 60.80% of the variance of log minutes is explained by our combination of features. Additionally, our RMSE value is 0.7031, which represents the average distance between the observed log minutes values and the predicted log minutes values.
+Our final model has a R^2^ score of 0.6080, meaning that 60.80% of the variance of log minutes is explained by our combination of features. Additionally, our RMSE value is 0.7031, which represents the average distance between the observed log minutes values and the predicted log minutes values.
 
-Based on these metrics, our final model is an improvement from our baseline model, with RMSE decreasing from 0.97 to 0.70 and $R^2$ increasing from 22% to 60%.
+Based on these metrics, our final model is an improvement from our baseline model, with RMSE decreasing from 0.97 to 0.70 and R^2^ increasing from 22% to 60%.
 
 ## Fairness Analysis
