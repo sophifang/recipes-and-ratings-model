@@ -1,6 +1,15 @@
 # Food.com Total Time to Make Recipe Prediction Model
 
 ## Framing the Problem
+The amount of time it takes to finish an activity or for an event to happen can vary among the respective categories because there are different internal and external factors that affect their duration of time. For this project, our prediction problem is to see how different recipes are prepared and whether factors such as the amount of ingredients each recipe requires or the difficulty rating of each recipe is, would have an affect on how long the recipes take to prepare.
+
+Response Variable: The response variable is minutes, which is quantitative data. We chose minutes as it is used to determine what the preparation time is per recipe. In the real world, the duration of time it takes to cook a meal is important to each person because there are people who can only afford to spend short periods of their day preparing meals versus others who have more time and they do not mind spending longer when it comes to cooking.
+
+Evaluation Metric: Because we are implementing a regression model, we would evaluate metrics such as $R^2$ and Root Mean Squared Error (RMSE). Both metrics are useful in their own way as $R^2$ measures the quality of a linear fit and RMSE measures the quality of a regression model's predictions. The higher $R^2$ is, it shows it does a better job at modeling data. The smaller RMSE is, it shows it does a better job at modeling data. It is also possible for the RMSE to increase on unseen data when features are added to the model. Taking this into consideration, we prioritized improving the $R^2$ metric based on its value increasing and the RMSE metric based on its value decreasing, while keeping track of the features we add to our model.
+
+Information We Know: At the time of prediction, we would know n_steps, n_ingredients, name, description, and review. Columns like n_steps, n_ingredients, name, and description are all provided for people who would want to know what the recipe is like and what ingredients they must obtain before they might attempt the recipe for themselves. The review column confirms that people have actually seen each feature of the recipe and made an effort to prepare the meal. This tells us that each feature mentioned earlier, and the review column, are all known at the time of prediction.
+
+For our prior analysis, which can be found [here](https://sophifang.github.io/recipes-and-ratings-analysis/), we cleaned a dataset where we excluded the review column because the column did not have much use. For our model, we decided to use a dataset where the review column is included. Our reasoning for this decision is so we would be able to figure how difficult each recipe was based on what the reviewees thought of the recipe. We were able to do this by querying each review to see if it contained text that had similar meanings to the words "easy" or "hard". We then assigned each review its own difficulty based on which word it had contained. If the review did not contain either word, we considered the recipe's difficulty to be neutral.
 
 ## Baseline Model
 ### Model Description
