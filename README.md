@@ -103,7 +103,7 @@ The mean RMSE for each combination of features is as follows:
 | n_steps + n_ingredients + difficulty + name               |    0.70423  |
 | n_steps + n_ingredients + difficulty + name + description |    0.850668 |
 
-, which revelas that our best-performing combination of features is `n_steps`, `n_ingredients`, `difficulty`, and `name`. This is the combination of features that we will be using to fit our final model.
+, which reveals that our best-performing combination of features is `n_steps`, `n_ingredients`, `difficulty`, and `name`. This is the combination of features that we will be using to fit our final model.
 
 ### Model Description
 Based on our hyperparameter testing, our final linear regression model is fit based on four features:
