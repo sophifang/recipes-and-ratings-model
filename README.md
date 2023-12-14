@@ -55,6 +55,8 @@ Note: Right column graph titles from top to bottom: Distribution of Natural Loga
 
 Now that we have log-transformed our variables, we have successfully had non-linear relationships _more_ linear. While there is still evidence of heteroscedasticity in the residual plot, the residuals are more uniformly scattered and has no pattern compared to previously.
 
+Note: Graph titles from left to right, first row: Relationship between Log of Number of Steps in a Recipe and the Minutes to Complete Recipe, Minutes Residuals vs Log of Number of Steps in a Recipe; second row: Relationship between Log of Number of Ingredients in a Recipe and the Minutes to Complete Recipe, Minutes Residuals vs Log of Number of Ingredients in a Recipe.
+
 <div><span><iframe src="assets/log-nsteps-log-minutes.html" width=400 height=300 frameBorder=0></iframe></span><span>
 <iframe src="assets/residual-log-nsteps-log-minutes.html" width=400 height=300 frameBorder=0></iframe></span></div>
 <div><span><iframe src="assets/log-ningredients-log-minutes.html" width=400 height=300 frameBorder=0></iframe></span><span>
