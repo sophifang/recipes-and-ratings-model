@@ -111,7 +111,7 @@ The mean RMSE for each combination of features is as follows:
 Based on our hyperparameter testing, our final linear regression model is fit based on four features:
 - `n_steps`: a quantitative, numeric attribute
 - `n_ingredients`: a quantitative, numeric attribute
-- `difficulty`: a categorical attribute (`easy`, `hard`, `neutral`)
+- `difficulty`: a categorical, nominal attribute (`easy`, `hard`, `neutral`)
 - `name`: a text-based attribute
 
 Our `Pipeline`
