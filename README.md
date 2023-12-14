@@ -70,8 +70,11 @@ The result of `GridSearchCV` is that the best hyperparameters for our model woul
 Given that linear regression is an equation and does not have as many meaningful hyperparameters to tweak compared to other models, we decided to use K-fold cross-validation to further improve our model by figuring out the best combination of features to your for our final model.
 
 In addition to the two features from our baseline model (log-scaled `n_steps` and `n_ingredients`), we wanted to explore the following features to improve our model:
-- `difficulty`:
-- `name`:
-- `description`:
+- `difficulty`: contains `easy`, `hard`, and `neutral` values based on if the recipe review contained keywords specifying those sentiments.
+    - We believed that this column would improve our model because if a user writes a review mentioning the difficulty of a recipe, we can infer that that recipe would take longer because it's harder, and vice versa.
+- `name`: contains the recipe name
+    - We believed that this column was good for our data and prediction task because the name of the recipe can provide insight into the category of cuisine (e.g. Chinese, Mexican, etc.) and the specific type of dish (e.g. casserole, brownies, etc.), which could point towards trends in time needed to complete the recipe. For example, “cookies” are typically faster to bake compared to “wedding cakes”, so recipes with those keywords in their names would give us a hint as to their duration.
+- `description`: contains the recipe description
+
 
 ## Fairness Analysis
