@@ -1,7 +1,7 @@
 # Food.com Total Time to Make Recipe Prediction Model
 
 ## Framing the Problem
-The amount of time it takes to finish an activity or for an event to happen can vary among the respective categories because there are different internal and external factors that affect their duration of time. For this project, our prediction problem is to use a regression model and see how different recipes are prepared and whether factors such as the amount of ingredients each recipe requires or the difficulty rating of each recipe is, would have an affect on how long the recipes take to prepare.
+The amount of time it takes to finish an activity or for an event to happen can vary among the respective categories because there are different internal and external factors that affect their duration of time. For this project, we build a regression model and our prediction problem is to see how different recipes are prepared and whether factors such as the amount of ingredients each recipe requires or the difficulty rating of each recipe is, would have an affect on how long the recipes take to prepare.
 
 **Response Variable**: The response variable is minutes, which is quantitative data. We chose minutes as it is used to determine what the preparation time is per recipe. In the real world, the duration of time it takes to cook a meal is important to each person because there are people who can only afford to spend short periods of their day preparing meals versus others who have more time and they do not mind spending longer when it comes to cooking.
 
