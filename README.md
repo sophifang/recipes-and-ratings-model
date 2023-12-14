@@ -60,7 +60,9 @@ The result of `GridSearchCV` is that the best hyperparameters for our model woul
 ### K-fold Cross-Validation
 Given that linear regression is an equation and does not have as many meaningful hyperparameters to tweak compared to other models, we decided to use K-fold cross-validation to further improve our model by figuring out the best combination of features to your for our final model.
 
-In addition to the two features from our baseline model (log-scaled `n_steps` and `n_ingredients`, we wanted to explore the following features to improve our model:
-
+In addition to the two features from our baseline model (log-scaled `n_steps` and `n_ingredients`), we wanted to explore the following features to improve our model:
+- `difficulty`:
+- `name`:
+- `description`:
 
 ## Fairness Analysis
