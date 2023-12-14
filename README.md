@@ -63,9 +63,9 @@ Note: Graph titles from left to right, first row: Relationship between Log of Nu
 <iframe src="assets/residual-log-ningredients-log-minutes.html" width=400 height=300 frameBorder=0></iframe></span></div>
 
 ### Model Performance
-On unseen data, our baseline model has a R<sup>2</sup> score of 0.2265, meaning that 22.65% of the variance of `log minutes` is explained by the variables of log-scaled `n_steps` and `n_ingredients`. Additionally, our RMSE value is 0.9713 on unseen data, which represents the average distance between the observed `log minutes` values and the predicted `log minutes` values. This RMSE value will be helpful when creating our final model, as it is particularly useful for comparing the fit of different regression models (the lower the RMSE, the better the model fits the dataset).
+On unseen data, our baseline model has a R<sup>2</sup> score of 0.2205, meaning that 22.65% of the variance of `log minutes` is explained by the variables of log-scaled `n_steps` and `n_ingredients`. Additionally, our RMSE value is 0.9876 on unseen data, which represents the average distance between the observed `log minutes` values and the predicted `log minutes` values. This RMSE value will be helpful when creating our final model, as it is particularly useful for comparing the fit of different regression models (the lower the RMSE, the better the model fits the dataset).
 
-Based on these metrics, our baseline model is not good since only 22.65% of the variance of our response variable `log minutes` is explained by the predictor variables `n_steps` and `n_ingredients`. Our goal for the our final model was to imrprove our regression model so that more of the variance of `log minutes` is explained (higher R<sup>2</sup>) and to generate a lower RMSE to indicate a better model fit.
+Based on these metrics, our baseline model is not good since only 22.05% of the variance of our response variable `log minutes` is explained by the predictor variables `n_steps` and `n_ingredients`. Our goal for the our final model was to imrprove our regression model so that more of the variance of `log minutes` is explained (higher R<sup>2</sup>) and to generate a lower RMSE to indicate a better model fit.
 
 ## Final Model
 
@@ -140,9 +140,9 @@ Our `Pipeline`
 4. predicts `log minutes` (the natural logarithm of `minutes`) using a linear regression model.
 
 ### Model Performance
-On unseen data, our final model has a R<sup>2</sup> score of 0.6080, meaning that 60.80% of the variance of log minutes is explained by our combination of features. Additionally, our RMSE value is 0.7031 on unseen data, which represents the average distance between the observed log minutes values and the predicted log minutes values.
+On unseen data, our final model has a R<sup>2</sup> score of 0.6103, meaning that 61.03% of the variance of log minutes is explained by our combination of features. Additionally, our RMSE value is 0.7071 on unseen data, which represents the average distance between the observed log minutes values and the predicted log minutes values.
 
-Based on these metrics, our final model is an improvement from our baseline model, with RMSE decreasing from 0.97 to 0.70 and R<sup>2</sup> increasing from 22% to 60%.
+Based on these metrics, our final model is an improvement from our baseline model, with RMSE decreasing from 0.9876 to 0.707 and R<sup>2</sup> increasing from 22.05% to 61.03%.
 
 ## Fairness Analysis
 For our fairness analysis, we want to investigate whether our final model performs better for recipes with good ratings or bad ratings. To answer this question, we first determined whether each value in the `rating` column is "good" or "bad" by assigning all ratings strictly greater than 3 as "good" and the rest of the values as "bad". We then ran a permutation test where we shuffled the ratings of group X, the bad ratings, and group Y, the good ratings. A summary of our hypothesis is shown in the following descriptions.\
