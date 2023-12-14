@@ -76,5 +76,14 @@ In addition to the two features from our baseline model (log-scaled `n_steps` an
     - We believed that this column was good for our data and prediction task because the name of the recipe can provide insight into the category of cuisine (e.g. Chinese, Mexican, etc.) and the specific type of dish (e.g. casserole, brownies, etc.), which could point towards trends in time needed to complete the recipe. For example, “cookies” are typically faster to bake compared to “wedding cakes”, so recipes with those keywords in their names would give us a hint as to their duration.
 - `description`: contains the recipe description
     - We believed that this feature would improve our model’s performance from the perspective of the data generating process because this field is a space for the recipe author to market their recipe freely. For example, if the recipe author highlights that this recipe is “dorm-friendly”, we can infer that it will take less time due to the limited or lack of kitchen space college students have. On the other hand, if we see “this is my family’s favorite Thanksgiving recipe”, the recipe duration would probably be longer because the words highlight that the recipe serves multiple people and is made for a special holiday.
+ 
+Our 5-fold cross-validation on the following combination of features—n_steps, n_ingredients, review, name, and description—yields the DataFrame below that displays the RMSE for each validation fold and combination of features.
+
+[insert dataframe]
+
+The mean RMSE for each combination of features is as follows:
+[insert dataframe]
+
+, which revelas that our best-performing combination of features is `n_steps`, `n_ingredients`, `difficulty`, and `name`. This is the combination of features that we will be using to fit our final model.
 
 ## Fairness Analysis
