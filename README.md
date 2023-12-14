@@ -152,11 +152,11 @@ For our fairness analysis, we want to investigate whether our final model perfor
 **Evaluation metric**: Since we used RMSE as one of our evaluation metrics for our final model, we will be using RMSE as our evaluation metric for our fairness analysis as well.\
 **Null Hypothesis**: Our model is fair. The RMSE for bad ratings and good ratings are roughly the same, and any differences are due to random chance.\
 **Alternative Hypothesis**: Our model is unfair. The RMSE for bad ratings is lower than its RMSE for good ratings.\
-**Test statistic**: We will use an absolute difference of means as our test statistic.\
+**Test statistic**: We will use a difference in RMSE between Group X and Y as our test statistic.\
 **Significance level**: Our significance level is 5%.\
 **p-value**: After 500 permutations, we got a p-value of 0.012.
 
 The histogram below is a visualization of the outcome of our permutation test.
 <iframe src="assets/fairness-analysis.html" width=800 height=600 frameBorder=0></iframe>
 
-**Conclusion**: By examining the distribution and how our p-value of 0.012 is smaller than our significance level of 0.05, we reject the null hypothesis. This result ***suggests*** our model is not fair as it appears statistically biased towards the good ratings because its RMSE is greater than the RMSE for bad ratings.
+**Conclusion**: By examining the distribution and how our p-value of 0.012 is smaller than our significance level of 0.05, we reject the null hypothesis. This result ***suggests*** our model is not fair as it appears statistically biased towards the good ratings because its RMSE is greater for good ratings than its RMSE for bad ratings.
