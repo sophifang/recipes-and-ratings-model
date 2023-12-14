@@ -62,7 +62,7 @@ For our final model, we wanted to see if changing the values of any of these hyp
 
 This means that the only relevant hyperparameter for us to test was `fit-intercept` (whether or not to calculate the intercept for the linear regression model), which we did using `GridSearchCV`. Below is a `DataFrame` displaying the mean validation accuaries of different combinations of hyperparameter settings.
 
-[insert dataframe]
+'| Validation Fold   |   fit_intercept = True |   fit_intercept = False |\n|:------------------|-----------------------:|------------------------:|\n| Fold 1            |               0.181547 |               -0.491835 |\n| Fold 2            |               0.179745 |               -0.52764  |\n| Fold 3            |               0.178617 |               -0.525155 |\n| Fold 4            |               0.178933 |               -0.51068  |\n| Fold 5            |               0.182239 |               -0.503867 |'
 
 The result of `GridSearchCV` is that the best hyperparameters for our model would be `{'fit_intercept': True}`, the default setting. Therefore, based on our results, we will be using all the default hyperparameter settings for the final model.
 
