@@ -135,7 +135,7 @@ For our fairness analysis, we want to investigate whether our final model perfor
 **Alternative Hypothesis**: Our model is unfair. The RMSE for bad ratings is lower than its RMSE for good ratings.\
 **Test statistic**: We will use an absolute difference of means as out test statistic.\
 **Significance level**: Our significance level will be 5%.\
-**p-value**: After 500 permutations, we got a p-value of 0.012.\
+**p-value**: After 500 permutations, we got a p-value of 0.012.
 
 <iframe src="assets/fairness_analysis.html" width=800 height=600 frameBorder=0></iframe>
 
